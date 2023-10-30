@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppLanding</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      .jumbotron
+      {
+        background-image: url(back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        border-radius:10px;
+        text-align: center;
+      }
+      #email
+      {
+        width: 300px;
+      }
+      #forms
+      {
+        justify-content: center;
+      }
+      #appsummary
+      {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+      .card-img-top
+      {
+        width: 100%;
+      }
+      #footer
+      {
+        background-color: aqua;
+        padding:50px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+
+      }
+      body{
+        position: relative;
+      }
+      </style>
+</head>
+<body data-type="scroll" data-target="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+      <a class="navbar-brand ">MyApp</a>
+      <ul class="nav mr-auto mt-2 mt-lg-0 "> 
+        <li class="nav-item">
+          <a class="nav-link " href="#home">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#appsummary">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Download</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <input type="email" class="form-control mr-sm-2" placeholder="email">
+      <input type="password" class="form-control my-2 my-sm-0 mr-sm-2 " placeholder="password">
+      <button class="btn btn-success my-2 my-sm-0">Login</button>
+      </form>
+    </nav>
+    <div class="jumbotron" id="home">
+      <h1 class="display-4">MY AWESOME APP</h1>
+      <p class="lead">This is Why u should download this fantastic app!</p>
+      <hr class="my-4" style="border-color: white;">
+      <p>Want to Know More? Join our mailing list!</p>
+      <form class="form-inline" id="forms">
+        <label class="sr-only" for="lemail">Email</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">SigIn</button>
+      </form>
+    </div>
+      <div class="container" id="appsummary">
+        <h1>Why This app is AweSome</h1>
+        <p class="lead">Summary,Once Again ,of our app's awesomeness</p>
+      </div>
+      <div class="container">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="cardimg.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><ion-icon name="desktop"></ion-icon>  Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="cardimg.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><ion-icon name="desktop"></ion-icon> Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="cardimg.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"> <ion-icon name="desktop"></ion-icon> Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="footer">
+        <h2>Download The App</h2>
+        <p>Really why Should I Download the App</p>
+        <p><a href="#"><img src="available-on-the-app-store.svg" width="200px"></a></p>
+    </div>
+</body>
+</html>
